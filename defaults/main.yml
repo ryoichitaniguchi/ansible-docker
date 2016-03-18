@@ -6,7 +6,7 @@
 docker_version:
 
 # Debian:
-docker_apt_package: "lxc-docker{{ '=' + docker_version if docker_version else '' }}"
+docker_apt_package: "docker-engine{{ '=' + docker_version if docker_version else '' }}"
 
 # RedHat:
 docker_yum_repo_url: "https://yum.dockerproject.org/repo/main"
